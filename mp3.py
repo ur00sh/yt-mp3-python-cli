@@ -9,7 +9,7 @@ yt = YouTube (str(input("Insert the link here: ")))
 video = yt.streams.filter(only_audio =  True).first()
 
 #destination
-destination = "/home/urosh/Music/Personal/"
+destination = "/path/of/your/own/choice" #insert your own path where do you want to download the mp3 file
 
 #download
 out_file = video.download(output_path = destination)
